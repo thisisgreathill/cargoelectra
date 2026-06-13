@@ -1,0 +1,6 @@
+{
+  "name": "CargoElectra",
+  "description": "Croatia's smart managed driver network and logistics platform for Wolt, Bolt, and B2B cargo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

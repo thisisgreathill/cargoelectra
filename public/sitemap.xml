@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cargoelectra.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cargoelectra.com/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cargoelectra.com/?lang=hr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cargoelectra.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=for-companies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=for-drivers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=vehicles</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=about</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cargoelectra.com/?tab=contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
