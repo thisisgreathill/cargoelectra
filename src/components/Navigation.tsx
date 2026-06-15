@@ -43,7 +43,7 @@ function Wordmark({ onClick }: { onClick: () => void }) {
       <img
         src="/logo.png"
         alt="CargoElectra"
-        className="h-11 sm:h-12 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+        className="h-16 sm:h-20 w-auto object-contain -my-3 transition-opacity duration-300 group-hover:opacity-90"
       />
     </button>
   );
