@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Zap, Globe, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Globe, Menu, X, ArrowUpRight } from 'lucide-react';
 import { useI18n, type Lang } from '../i18n';
 
 interface NavigationProps {
@@ -39,13 +39,12 @@ function LangSwitcher() {
 
 function Wordmark({ onClick }: { onClick: () => void }) {
   return (
-    <button onClick={onClick} className="flex items-center gap-2.5 cursor-pointer select-none group shrink-0" aria-label="CargoElectra home">
-      <span className="relative w-8 h-8 rounded-lg bg-gradient-to-br from-[#00E5FF]/20 to-[#2563EB]/5 border border-[#00E5FF]/25 flex items-center justify-center transition-all duration-300 group-hover:border-[#00E5FF]/50 group-hover:shadow-[0_0_16px_rgba(0,229,255,0.35)]">
-        <Zap className="w-4 h-4 fill-[#00E5FF] text-[#00E5FF] bolt-pulse" />
-      </span>
-      <span className="text-[17px] font-bold tracking-tight text-white font-tech leading-none transition group-hover:text-[#00E5FF]">
-        CARGO<span className="text-[#00E5FF] tracking-[0.08em] font-semibold">ELECTRA</span>
-      </span>
+    <button onClick={onClick} className="flex items-center cursor-pointer select-none group shrink-0" aria-label="CargoElectra home">
+      <img
+        src="/logo.png"
+        alt="CargoElectra"
+        className="h-10 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+      />
     </button>
   );
 }
@@ -164,9 +163,8 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-sans select-none">
         
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-white font-bold font-display">
-            <Zap className="w-5 h-5 text-[#00E5FF] fill-[#00E5FF]" />
-            <span className="text-lg tracking-wider uppercase font-display">CARGO<span className="text-[#00E5FF]">ELECTRA</span></span>
+          <div>
+            <img src="/logo.png" alt="CargoElectra" className="h-10 w-auto object-contain" />
           </div>
           <p className="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
             {t('footer.tagline')}
