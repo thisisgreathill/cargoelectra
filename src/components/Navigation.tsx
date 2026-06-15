@@ -40,13 +40,11 @@ function LangSwitcher() {
 function Wordmark({ onClick }: { onClick: () => void }) {
   return (
     <button onClick={onClick} className="flex items-center cursor-pointer select-none group shrink-0" aria-label="CargoElectra home">
-      <span className="flex items-center bg-white/95 rounded-xl px-2 py-1 shadow-sm">
-        <img
-          src="/logo.png"
-          alt="CargoElectra"
-          className="h-9 w-auto max-w-[180px] object-contain transition-opacity duration-300 group-hover:opacity-90"
-        />
-      </span>
+      <img
+        src="/logo.png"
+        alt="CargoElectra"
+        className="h-11 sm:h-12 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+      />
     </button>
   );
 }
@@ -165,8 +163,8 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-sans select-none">
         
         <div className="space-y-4">
-          <div className="inline-flex bg-white/95 rounded-xl px-2 py-1">
-            <img src="/logo.png" alt="CargoElectra" className="h-10 w-auto max-w-[180px] object-contain" />
+          <div>
+            <img src="/logo.png" alt="CargoElectra" className="h-14 w-auto object-contain" />
           </div>
           <p className="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
             {t('footer.tagline')}
