@@ -43,7 +43,7 @@ function Wordmark({ onClick }: { onClick: () => void }) {
       <img
         src="/logo.png"
         alt="CargoElectra"
-        className="h-16 sm:h-20 w-auto object-contain -my-3 transition-opacity duration-300 group-hover:opacity-90"
+        className="h-16 sm:h-20 w-auto object-contain -my-3 -translate-y-1 transition-opacity duration-300 group-hover:opacity-90"
       />
     </button>
   );
@@ -86,7 +86,7 @@ export function Navbar({ currentTab, onNavigateTab }: NavigationProps) {
                 onClick={() => go(item.tab)}
                 data-active={active}
                 className={`nav-link text-[11px] font-tech font-medium tracking-[0.18em] uppercase whitespace-nowrap transition-colors duration-300 cursor-pointer ${
-                  active ? 'text-[#00E5FF]' : 'text-slate-400 hover:text-white'
+                  active ? 'text-[#19D9E0]' : 'text-slate-400 hover:text-white'
                 }`}
               >
                 {t(item.key)}
@@ -101,7 +101,7 @@ export function Navbar({ currentTab, onNavigateTab }: NavigationProps) {
 
           <button
             onClick={() => go('contact')}
-            className="hidden sm:inline-flex items-center gap-1.5 bg-[#00E5FF] text-black hover:bg-white hover:shadow-[0_0_22px_rgba(0,229,255,0.5)] px-4 py-2 rounded-[10px] text-[11px] font-tech font-bold tracking-[0.12em] uppercase cursor-pointer transition-all duration-300 active:scale-95"
+            className="hidden sm:inline-flex items-center gap-1.5 bg-[#19D9E0] text-black hover:bg-white hover:shadow-[0_0_22px_rgba(25,217,224,0.5)] px-4 py-2 rounded-[10px] text-[11px] font-tech font-bold tracking-[0.12em] uppercase cursor-pointer transition-all duration-300 active:scale-95"
           >
             {t('nav.contact')}
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -111,7 +111,7 @@ export function Navbar({ currentTab, onNavigateTab }: NavigationProps) {
           <button
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Menu"
-            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-[9px] border border-white/10 text-white hover:border-[#00E5FF]/40 hover:text-[#00E5FF] transition cursor-pointer"
+            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-[9px] border border-white/10 text-white hover:border-[#19D9E0]/40 hover:text-[#19D9E0] transition cursor-pointer"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -130,10 +130,10 @@ export function Navbar({ currentTab, onNavigateTab }: NavigationProps) {
                     onClick={() => go(item.tab)}
                     className={`flex items-center justify-between text-left py-3 text-sm font-tech tracking-[0.1em] uppercase transition cursor-pointer ${
                       i !== NAV_ITEMS.length - 1 ? 'border-b border-white/5' : ''
-                    } ${active ? 'text-[#00E5FF]' : 'text-slate-300 hover:text-white'}`}
+                    } ${active ? 'text-[#19D9E0]' : 'text-slate-300 hover:text-white'}`}
                   >
                     {t(item.key)}
-                    {active && <span className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] shadow-[0_0_8px_#00E5FF]" />}
+                    {active && <span className="w-1.5 h-1.5 rounded-full bg-[#19D9E0] shadow-[0_0_8px_#19D9E0]" />}
                   </button>
                 );
               })}
@@ -145,7 +145,7 @@ export function Navbar({ currentTab, onNavigateTab }: NavigationProps) {
 
           <button
             onClick={() => go('contact')}
-            className="w-full mt-4 inline-flex items-center justify-center gap-1.5 bg-[#00E5FF] text-black hover:bg-white px-4 py-3 rounded-[9px] text-xs font-tech font-bold tracking-[0.12em] uppercase cursor-pointer transition active:scale-95"
+            className="w-full mt-4 inline-flex items-center justify-center gap-1.5 bg-[#19D9E0] text-black hover:bg-white px-4 py-3 rounded-[9px] text-xs font-tech font-bold tracking-[0.12em] uppercase cursor-pointer transition active:scale-95"
           >
             {t('nav.contact')}
             <ArrowUpRight className="w-4 h-4" />
@@ -172,7 +172,7 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
         </div>
 
         <div className="space-y-3 text-xs">
-          <h4 className="font-bold text-[#00E5FF] font-mono uppercase tracking-[0.2em]">{t('footer.quickNav')}</h4>
+          <h4 className="font-bold text-[#19D9E0] font-mono uppercase tracking-[0.2em]">{t('footer.quickNav')}</h4>
           <ul className="space-y-2 text-slate-400 font-light">
             <li><button onClick={() => onNavigateTab('home')} className="hover:text-white cursor-pointer transition">{t('footer.fHome')}</button></li>
             <li><button onClick={() => onNavigateTab('services')} className="hover:text-white cursor-pointer transition">{t('footer.fServices')}</button></li>
@@ -182,7 +182,7 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
         </div>
 
         <div className="space-y-3 text-xs">
-          <h4 className="font-bold text-[#00E5FF] font-mono uppercase tracking-[0.2em]">{t('footer.legal')}</h4>
+          <h4 className="font-bold text-[#19D9E0] font-mono uppercase tracking-[0.2em]">{t('footer.legal')}</h4>
           <ul className="space-y-2 text-slate-400 font-light">
             <li>{t('footer.legal1')}</li>
             <li>{t('footer.legal2')}</li>
@@ -192,7 +192,7 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
         </div>
 
         <div className="space-y-3 text-xs">
-          <h4 className="font-bold text-[#00E5FF] font-mono uppercase tracking-[0.2em]">{t('footer.hq')}</h4>
+          <h4 className="font-bold text-[#19D9E0] font-mono uppercase tracking-[0.2em]">{t('footer.hq')}</h4>
           <p className="text-slate-400 leading-relaxed font-light font-mono text-[11px] whitespace-pre-line">
             {t('footer.address')}
           </p>
@@ -202,7 +202,7 @@ export function Footer({ onNavigateTab }: { onNavigateTab: (tab: string) => void
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-500 font-mono">
         <p>{t('footer.rights')}</p>
-        <p className="tracking-widest uppercase text-[#00E5FF]/70">{t('footer.ecosystem')}</p>
+        <p className="tracking-widest uppercase text-[#19D9E0]/70">{t('footer.ecosystem')}</p>
       </div>
     </footer>
   );

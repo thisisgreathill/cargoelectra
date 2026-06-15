@@ -70,9 +70,9 @@ export default function LiquidHero({
 
     const trails: Trail[] = [];
     const colors = [
-      'rgba(0, 229, 255, 0.45)',  // Electric Cyan #00E5FF
-      'rgba(37, 99, 235, 0.35)',  // Cobalt Blue #2563EB
-      'rgba(79, 70, 229, 0.3)',   // Tech Indigo #4F46E5
+      'rgba(25,217,224, 0.45)',  // Teal-cyan #19D9E0 (logo "Cargo")
+      'rgba(180,230,30, 0.40)',  // Electric lime #B4E61E (logo "Electra")
+      'rgba(124,181,24, 0.28)',  // Deep lime #7CB518
       'rgba(255, 255, 255, 0.15)'  // Soft white
     ];
 
@@ -113,7 +113,7 @@ export default function LiquidHero({
       });
 
       // Draw subtle grid representing connected logistics nodes
-      ctx.strokeStyle = 'rgba(0, 229, 255, 0.012)';
+      ctx.strokeStyle = 'rgba(25,217,224, 0.012)';
       ctx.lineWidth = 1;
       const gridSize = 120;
       for (let x = 0; x < width; x += gridSize) {
@@ -191,13 +191,13 @@ export default function LiquidHero({
 
       {/* Decorative Light Radial Aura */}
       <div 
-        className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full blur-[160px] bg-gradient-to-br from-[#00E5FF]/10 to-transparent pointer-events-none transition-transform duration-700 ease-out z-0" 
+        className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full blur-[160px] bg-gradient-to-br from-[#19D9E0]/10 to-transparent pointer-events-none transition-transform duration-700 ease-out z-0" 
         style={{ 
           transform: `translate3d(${mousePos.x * 25}px, ${mousePos.y * 25}px, 0)`,
         }} 
       />
       <div 
-        className="absolute bottom-[-10%] left-[-15%] w-[800px] h-[800px] rounded-full blur-[220px] bg-gradient-to-tr from-[#2563EB]/12 to-transparent pointer-events-none transition-transform duration-1000 ease-out z-0" 
+        className="absolute bottom-[-10%] left-[-15%] w-[800px] h-[800px] rounded-full blur-[220px] bg-gradient-to-tr from-[#B4E61E]/12 to-transparent pointer-events-none transition-transform duration-1000 ease-out z-0" 
         style={{
           transform: `translate3d(${mousePos.x * -18}px, ${mousePos.y * -18}px, 0)`,
         }}
@@ -225,8 +225,8 @@ export default function LiquidHero({
                 {renderLine(headingLine1, 0)}
               </span>
 
-              {/* Line 2 \u2014 electric highlight */}
-              <span className="block font-display text-[#00E5FF] font-bold">
+              {/* Line 2 \u2014 lime highlight, mirrors the logo's "Electra" */}
+              <span className="block font-display text-[#B4E61E] font-bold" style={{ textShadow: '0 0 34px rgba(180,230,30,0.35)' }}>
                 {renderLine(headingLine2, headingLine1.length + 1)}
               </span>
             </h1>
@@ -253,7 +253,7 @@ export default function LiquidHero({
               <button
                 id="btn-apply-driver"
                 onClick={onJoinAsDriver}
-                className="bg-[#00E5FF] hover:bg-cyan-300 text-black px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 flex items-center gap-2 cursor-pointer shadow-[0_4px_20px_rgba(0,229,255,0.25)] active:scale-[0.98]"
+                className="bg-[#19D9E0] hover:bg-cyan-300 text-black px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 flex items-center gap-2 cursor-pointer shadow-[0_4px_20px_rgba(25,217,224,0.25)] active:scale-[0.98]"
               >
                 {t('hero.applyDriver')}
                 <ArrowRight className="w-5 h-5" />
@@ -262,7 +262,7 @@ export default function LiquidHero({
               <button
                 id="btn-learn-more"
                 onClick={() => onNavigateToSection('how-it-works')}
-                className="liquid-glass border border-[#00E5FF]/20 text-white hover:border-[#00E5FF]/50 hover:bg-[#00E5FF]/5 px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 cursor-pointer active:scale-[0.98]"
+                className="liquid-glass border border-[#19D9E0]/20 text-white hover:border-[#19D9E0]/50 hover:bg-[#19D9E0]/5 px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 cursor-pointer active:scale-[0.98]"
               >
                 {t('hero.howItWorks')}
               </button>

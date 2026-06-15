@@ -72,7 +72,7 @@ export default function PublicPages({
       {/* 1. DYNAMIC STATS STRIP / SCROLL INDICATOR */}
       {currentTab === 'home' && (
         <div className="border-y border-white/5 bg-[#050811] py-10 overflow-hidden relative">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,229,255,0.02)_1px,transparent_1px)] bg-[size:100%_28px] pointer-events-none" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(25,217,224,0.02)_1px,transparent_1px)] bg-[size:100%_28px] pointer-events-none" />
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6">
               {[1, 2, 3, 4].map((n) => (
@@ -95,7 +95,7 @@ export default function PublicPages({
           <section id="how-it-works" className="py-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
               <span className="kicker kicker--center">{t('home.flow.tag')}</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mt-5 font-tech">{t('home.flow.title.a')}<span className="text-[#00E5FF]">{t('home.flow.title.hl')}</span>{t('home.flow.title.b')}</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mt-5 font-tech">{t('home.flow.title.a')}<span className="text-[#19D9E0]">{t('home.flow.title.hl')}</span>{t('home.flow.title.b')}</h2>
               <p className="text-slate-400 font-light mt-4 leading-relaxed">{t('home.flow.desc')}</p>
             </div>
 
@@ -111,7 +111,7 @@ export default function PublicPages({
                 ].map(({ n, Icon, title, desc }) => (
                   <div key={n} className="step-card p-8 pt-7 group">
                     <div className="flex items-start justify-between mb-7">
-                      <div className="relative z-10 p-3 bg-[#050b16] border border-[#00E5FF]/25 rounded-xl w-fit text-[#00E5FF] shadow-[0_0_18px_-6px_rgba(0,229,255,0.6)] group-hover:shadow-[0_0_24px_-4px_rgba(0,229,255,0.8)] transition-shadow">
+                      <div className="relative z-10 p-3 bg-[#050b16] border border-[#19D9E0]/25 rounded-xl w-fit text-[#19D9E0] shadow-[0_0_18px_-6px_rgba(25,217,224,0.6)] group-hover:shadow-[0_0_24px_-4px_rgba(25,217,224,0.8)] transition-shadow">
                         <Icon className="w-6 h-6" />
                       </div>
                       <span className="step-index text-6xl select-none">{n}</span>
@@ -127,12 +127,12 @@ export default function PublicPages({
           {/* BRANDS WE OPERATE ON */}
           <section className="py-16 bg-[#040812] border-y border-white/5">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#00E5FF] block mb-8">{t('home.brands.tag')}</span>
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9E0] block mb-8">{t('home.brands.tag')}</span>
               <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                <div className="text-2xl font-black tracking-widest text-[#00E5FF] font-display">WOLT <span className="text-white">FLEET</span></div>
-                <div className="text-2xl font-black tracking-wider text-[#00E5FF] font-display">BOLT <span className="text-white">FOOD</span></div>
-                <div className="text-2xl font-semibold tracking-tight text-white font-display">CARGO <span className="text-[#00E5FF] font-display font-black">B2B</span></div>
-                <div className="text-2xl font-mono tracking-widest text-[#FFF]">BOLT <span className="text-[#00E5FF] font-display font-black">TAXI</span></div>
+                <div className="text-2xl font-black tracking-widest text-[#19D9E0] font-display">WOLT <span className="text-white">FLEET</span></div>
+                <div className="text-2xl font-black tracking-wider text-[#19D9E0] font-display">BOLT <span className="text-white">FOOD</span></div>
+                <div className="text-2xl font-semibold tracking-tight text-white font-display">CARGO <span className="text-[#19D9E0] font-display font-black">B2B</span></div>
+                <div className="text-2xl font-mono tracking-widest text-[#FFF]">BOLT <span className="text-[#19D9E0] font-display font-black">TAXI</span></div>
               </div>
             </div>
           </section>
@@ -157,12 +157,12 @@ export default function PublicPages({
                 { k: 'home.svc3.kicker', title: 'home.svc3.title', desc: 'home.svc3.desc' },
               ].map((s) => (
                 <div key={s.k} className="step-card group p-8 flex flex-col">
-                  <span className="text-[10px] font-mono text-[#00E5FF] tracking-[0.18em] uppercase">{t(s.k)}</span>
+                  <span className="text-[10px] font-mono text-[#19D9E0] tracking-[0.18em] uppercase">{t(s.k)}</span>
                   <h3 className="text-xl font-semibold text-white mt-4 mb-3 font-tech tracking-tight">{t(s.title)}</h3>
                   <p className="text-slate-400 text-sm font-light leading-relaxed mb-7 flex-1">
                     {t(s.desc)}
                   </p>
-                  <div className="w-10 h-10 rounded-full border border-[#00E5FF]/25 flex items-center justify-center text-[#00E5FF] group-hover:bg-[#00E5FF] group-hover:text-black group-hover:shadow-[0_0_18px_rgba(0,229,255,0.5)] transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full border border-[#19D9E0]/25 flex items-center justify-center text-[#19D9E0] group-hover:bg-[#19D9E0] group-hover:text-black group-hover:shadow-[0_0_18px_rgba(25,217,224,0.5)] transition-all duration-300">
                     <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                   </div>
                 </div>
@@ -330,7 +330,7 @@ export default function PublicPages({
                 <p className="text-gray-400 font-light text-sm leading-relaxed mb-4">
                   {t('services.s4.desc')}
                 </p>
-                <div className="flex gap-6 text-xs text-[#00E5FF] font-mono">
+                <div className="flex gap-6 text-xs text-[#19D9E0] font-mono">
                   <span>{t('services.s4.b1')}</span>
                   <span>{t('services.s4.b2')}</span>
                   <span>{t('services.s4.b3')}</span>
@@ -339,7 +339,7 @@ export default function PublicPages({
               <div className="md:col-span-4 flex justify-end">
                 <div className="bg-[#050c18] border border-cyan-500/10 p-6 rounded-xl w-full text-center">
                   <span className="text-xs text-gray-400 uppercase font-mono block">{t('services.s4.priceLabel')}</span>
-                  <span className="text-3xl font-extrabold text-[#00E5FF] block mt-2 font-mono">{t('services.s4.priceValue')}</span>
+                  <span className="text-3xl font-extrabold text-[#19D9E0] block mt-2 font-mono">{t('services.s4.priceValue')}</span>
                   <span className="text-xs text-gray-500 block mt-1">{t('services.s4.priceSub')}</span>
                 </div>
               </div>
@@ -353,7 +353,7 @@ export default function PublicPages({
       {currentTab === 'for-companies' && (
         <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="max-w-3xl mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#00E5FF] font-semibold">{t('companies.tag')}</span>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0] font-semibold">{t('companies.tag')}</span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mt-4 font-display">{t('companies.title')}</h1>
             <p className="text-slate-300 text-lg font-light mt-4 leading-relaxed">
               {t('companies.desc')}
@@ -384,23 +384,23 @@ export default function PublicPages({
               </ul>
             </div>
 
-            <div className="p-8 rounded-2xl border border-[#00E5FF]/20 bg-[#00E5FF]/5">
-              <span className="text-xs font-mono text-[#00E5FF] uppercase block mb-4 font-bold tracking-wider">{t('companies.newWay')}</span>
+            <div className="p-8 rounded-2xl border border-[#19D9E0]/20 bg-[#19D9E0]/5">
+              <span className="text-xs font-mono text-[#19D9E0] uppercase block mb-4 font-bold tracking-wider">{t('companies.newWay')}</span>
               <ul className="space-y-4 text-sm text-slate-200">
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-[#00E5FF] shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#19D9E0] shrink-0 mt-0.5" />
                   <span>{t('companies.new1')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-[#00E5FF] shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#19D9E0] shrink-0 mt-0.5" />
                   <span>{t('companies.new2')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-[#00E5FF] shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#19D9E0] shrink-0 mt-0.5" />
                   <span>{t('companies.new3')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-[#00E5FF] shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#19D9E0] shrink-0 mt-0.5" />
                   <span>{t('companies.new4')}</span>
                 </li>
               </ul>
@@ -418,56 +418,56 @@ export default function PublicPages({
               
               <div className="liquid-glass border border-white/5 p-8 rounded-2xl flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-xs text-[#00E5FF] uppercase font-semibold">{t('companies.plan.starter')}</span>
+                  <span className="font-mono text-xs text-[#19D9E0] uppercase font-semibold">{t('companies.plan.starter')}</span>
                   <div className="text-3xl font-bold mt-2 text-white font-mono">{t('companies.plan.starterPrice')}<span className="text-sm font-light text-slate-500">{t('companies.plan.perMonth')}</span></div>
                   <p className="text-slate-400 text-xs mt-3 mb-6">{t('companies.plan.starterDesc')}</p>
                   <ul className="space-y-3 text-xs text-slate-300 border-t border-white/5 pt-6">
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.starter1')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.starter1')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.starter2')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.starter2')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.starter3')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.starter3')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.starter4')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.starter4')}
                     </li>
                   </ul>
                 </div>
                 <button
                   onClick={onJoinAsBusiness}
-                  className="bg-white/10 hover:bg-[#00E5FF] hover:text-black hover:shadow-[0_0_15px_rgba(0,229,255,0.4)] text-white px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
+                  className="bg-white/10 hover:bg-[#19D9E0] hover:text-black hover:shadow-[0_0_15px_rgba(25,217,224,0.4)] text-white px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
                 >
                   {t('companies.plan.apply')}
                 </button>
               </div>
 
-              <div className="liquid-glass border border-[#00E5FF]/40 p-8 rounded-2xl relative flex flex-col justify-between shadow-2xl">
-                <span className="absolute top-4 right-4 bg-[#00E5FF] text-black text-[10px] font-bold font-mono px-2.5 py-1 rounded">{t('companies.plan.popular')}</span>
+              <div className="liquid-glass border border-[#19D9E0]/40 p-8 rounded-2xl relative flex flex-col justify-between shadow-2xl">
+                <span className="absolute top-4 right-4 bg-[#19D9E0] text-black text-[10px] font-bold font-mono px-2.5 py-1 rounded">{t('companies.plan.popular')}</span>
                 <div>
-                  <span className="font-mono text-xs text-[#00E5FF] uppercase font-bold tracking-wider">{t('companies.plan.business')}</span>
+                  <span className="font-mono text-xs text-[#19D9E0] uppercase font-bold tracking-wider">{t('companies.plan.business')}</span>
                   <div className="text-3xl font-bold mt-2 text-white font-mono">{t('companies.plan.businessPrice')}<span className="text-sm font-light text-slate-500">{t('companies.plan.perMonth')}</span></div>
                   <p className="text-slate-400 text-xs mt-3 mb-6">{t('companies.plan.businessDesc')}</p>
                   <ul className="space-y-3 text-xs text-slate-200 border-t border-white/5 pt-6">
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.business1')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.business1')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.business2')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.business2')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.business3')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.business3')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.business4')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.business4')}
                     </li>
                   </ul>
                 </div>
                 <button
                   onClick={onJoinAsBusiness}
-                  className="bg-[#00E5FF] hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(0,229,255,0.5)] text-black px-4 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
+                  className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(25,217,224,0.5)] text-black px-4 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
                 >
                   {t('companies.plan.apply')}
                 </button>
@@ -475,27 +475,27 @@ export default function PublicPages({
 
               <div className="liquid-glass border border-white/5 p-8 rounded-2xl flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-xs text-[#00E5FF] uppercase font-semibold">{t('companies.plan.enterprise')}</span>
+                  <span className="font-mono text-xs text-[#19D9E0] uppercase font-semibold">{t('companies.plan.enterprise')}</span>
                   <div className="text-3xl font-bold mt-2 text-white font-mono">{t('companies.plan.enterprisePrice')}</div>
                   <p className="text-slate-400 text-xs mt-3 mb-6">{t('companies.plan.enterpriseDesc')}</p>
                   <ul className="space-y-3 text-xs text-slate-300 border-t border-white/5 pt-6">
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.enterprise1')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.enterprise1')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.enterprise2')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.enterprise2')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.enterprise3')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.enterprise3')}
                     </li>
                     <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#00E5FF]" /> {t('companies.plan.enterprise4')}
+                      <Check className="w-4 h-4 text-[#19D9E0]" /> {t('companies.plan.enterprise4')}
                     </li>
                   </ul>
                 </div>
                 <button
                   onClick={onJoinAsBusiness}
-                  className="bg-white/10 hover:bg-[#00E5FF] hover:text-black hover:shadow-[0_0_15px_rgba(0,229,255,0.4)] text-white px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
+                  className="bg-white/10 hover:bg-[#19D9E0] hover:text-black hover:shadow-[0_0_15px_rgba(25,217,224,0.4)] text-white px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
                 >
                   {t('companies.plan.contact')}
                 </button>
@@ -510,8 +510,8 @@ export default function PublicPages({
       {currentTab === 'for-drivers' && (
         <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="max-w-3xl mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#00E5FF] font-semibold">{t('drivers.tag')}</span>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mt-4 font-display">{t('drivers.title.a')}<span className="text-[#00E5FF]">{t('drivers.title.hl')}</span>{t('drivers.title.b')}</h1>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0] font-semibold">{t('drivers.tag')}</span>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mt-4 font-display">{t('drivers.title.a')}<span className="text-[#19D9E0]">{t('drivers.title.hl')}</span>{t('drivers.title.b')}</h1>
             <p className="text-slate-300 text-lg font-light mt-4 leading-relaxed">
               {t('drivers.desc')}
             </p>
@@ -522,7 +522,7 @@ export default function PublicPages({
             
             <div className="lg:col-span-7 space-y-8">
               <div>
-                <span className="text-xs font-mono text-[#00E5FF] uppercase block mb-1 font-semibold">{t('drivers.calc.tag')}</span>
+                <span className="text-xs font-mono text-[#19D9E0] uppercase block mb-1 font-semibold">{t('drivers.calc.tag')}</span>
                 <h3 className="text-2xl font-bold text-white font-display">{t('drivers.calc.title')}</h3>
                 <p className="text-slate-400 text-sm font-light mt-2">
                   {t('drivers.calc.desc')}
@@ -536,7 +536,7 @@ export default function PublicPages({
                   <button 
                     onClick={() => setCalcVehicle('scooter')}
                     className={`px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase borderMain transition cursor-pointer text-center border ${
-                      calcVehicle === 'scooter' ? 'bg-[#00E5FF] text-black border-[#00E5FF]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
+                      calcVehicle === 'scooter' ? 'bg-[#19D9E0] text-black border-[#19D9E0]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
                     }`}
                   >
                     {t('drivers.calc.scooter')}
@@ -544,7 +544,7 @@ export default function PublicPages({
                   <button 
                     onClick={() => setCalcVehicle('bike')}
                     className={`px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase borderMain transition cursor-pointer text-center border ${
-                      calcVehicle === 'bike' ? 'bg-[#00E5FF] text-black border-[#00E5FF]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
+                      calcVehicle === 'bike' ? 'bg-[#19D9E0] text-black border-[#19D9E0]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
                     }`}
                   >
                     {t('drivers.calc.bike')}
@@ -552,7 +552,7 @@ export default function PublicPages({
                   <button 
                     onClick={() => setCalcVehicle('car')}
                     className={`px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase borderMain transition cursor-pointer text-center border ${
-                      calcVehicle === 'car' ? 'bg-[#00E5FF] text-black border-[#00E5FF]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
+                      calcVehicle === 'car' ? 'bg-[#19D9E0] text-black border-[#19D9E0]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
                     }`}
                   >
                     {t('drivers.calc.car')}
@@ -560,7 +560,7 @@ export default function PublicPages({
                   <button 
                     onClick={() => setCalcVehicle('van')}
                     className={`px-4 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase borderMain transition cursor-pointer text-center border ${
-                      calcVehicle === 'van' ? 'bg-[#00E5FF] text-black border-[#00E5FF]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
+                      calcVehicle === 'van' ? 'bg-[#19D9E0] text-black border-[#19D9E0]' : 'bg-black text-slate-400 border-white/10 hover:text-white hover:border-white/25'
                     }`}
                   >
                     {t('drivers.calc.van')}
@@ -572,7 +572,7 @@ export default function PublicPages({
               <div className="space-y-3">
                 <div className="flex justify-between items-center text-xs font-mono">
                   <span className="text-slate-500 uppercase">{t('drivers.calc.hoursLabel')}</span>
-                  <span className="text-[#00E5FF] font-bold">{calcHours} {t('drivers.calc.hoursUnit')}</span>
+                  <span className="text-[#19D9E0] font-bold">{calcHours} {t('drivers.calc.hoursUnit')}</span>
                 </div>
                 <input 
                   type="range" 
@@ -580,7 +580,7 @@ export default function PublicPages({
                   max="60" 
                   value={calcHours}
                   onChange={(e) => setCalcHours(Number(e.target.value))}
-                  className="w-full accent-[#00E5FF] h-1 bg-white/10 rounded-lg appearance-none cursor-pointer"
+                  className="w-full accent-[#19D9E0] h-1 bg-white/10 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-[10px] text-slate-500 font-mono">
                   <span>{t('drivers.calc.partTime')}</span>
@@ -596,7 +596,7 @@ export default function PublicPages({
               
               <div className="space-y-1">
                 <span className="text-xs text-slate-500 block font-mono">{t('drivers.calc.netLabel')}</span>
-                <span className="text-4xl font-black text-[#00E5FF] tracking-tight block font-mono">€{earnings.net.toLocaleString()}</span>
+                <span className="text-4xl font-black text-[#19D9E0] tracking-tight block font-mono">€{earnings.net.toLocaleString()}</span>
                 <span className="text-[10px] text-slate-500 block leading-normal">{t('drivers.calc.netSub')}</span>
               </div>
 
@@ -609,7 +609,7 @@ export default function PublicPages({
                   <span className="text-slate-400 font-light">{t('drivers.calc.commission')}</span>
                   <span className="font-mono text-red-400">- €{earnings.commission}</span>
                 </div>
-                <div className="flex justify-between text-[11px] text-[#00E5FF]">
+                <div className="flex justify-between text-[11px] text-[#19D9E0]">
                   <span className="font-light">{t('drivers.calc.netWeekly')}</span>
                   <span className="font-mono font-bold">€{earnings.grossWeekly}</span>
                 </div>
@@ -617,7 +617,7 @@ export default function PublicPages({
 
               <button 
                 onClick={onJoinAsDriver}
-                className="w-full bg-[#00E5FF] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(0,229,255,0.3)] text-black py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition cursor-pointer"
+                className="w-full bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.3)] text-black py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition cursor-pointer"
               >
                 {t('drivers.calc.cta')}
               </button>
@@ -631,7 +631,7 @@ export default function PublicPages({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
               <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                <span className="text-xs text-[#00E5FF] font-mono font-bold">{t('drivers.b1.kicker')}</span>
+                <span className="text-xs text-[#19D9E0] font-mono font-bold">{t('drivers.b1.kicker')}</span>
                 <h4 className="text-lg font-semibold text-white mt-3 mb-2 font-display">{t('drivers.b1.title')}</h4>
                 <p className="text-slate-400 text-xs font-light leading-relaxed">
                   {t('drivers.b1.desc')}
@@ -639,7 +639,7 @@ export default function PublicPages({
               </div>
 
               <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                <span className="text-xs text-[#00E5FF] font-mono font-bold">{t('drivers.b2.kicker')}</span>
+                <span className="text-xs text-[#19D9E0] font-mono font-bold">{t('drivers.b2.kicker')}</span>
                 <h4 className="text-lg font-semibold text-white mt-3 mb-2 font-display">{t('drivers.b2.title')}</h4>
                 <p className="text-slate-400 text-xs font-light leading-relaxed">
                   {t('drivers.b2.desc')}
@@ -647,7 +647,7 @@ export default function PublicPages({
               </div>
 
               <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                <span className="text-xs text-[#00E5FF] font-mono font-bold">{t('drivers.b3.kicker')}</span>
+                <span className="text-xs text-[#19D9E0] font-mono font-bold">{t('drivers.b3.kicker')}</span>
                 <h4 className="text-lg font-semibold text-white mt-3 mb-2 font-display">{t('drivers.b3.title')}</h4>
                 <p className="text-slate-400 text-xs font-light leading-relaxed">
                   {t('drivers.b3.desc')}
@@ -663,7 +663,7 @@ export default function PublicPages({
       {currentTab === 'vehicles' && (
         <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="max-w-3xl mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#00E5FF] font-semibold">{t('vehicles.tag')}</span>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0] font-semibold">{t('vehicles.tag')}</span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mt-4 font-display">{t('vehicles.title')}</h1>
             <p className="text-slate-300 text-lg font-light mt-4 leading-relaxed">
               {t('vehicles.desc')}
@@ -672,7 +672,7 @@ export default function PublicPages({
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {vehicles.map((vehicle) => (
-              <div key={vehicle.id} className="liquid-glass border border-white/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-[#00E5FF]/30 transition duration-300">
+              <div key={vehicle.id} className="liquid-glass border border-white/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-[#19D9E0]/30 transition duration-300">
                 <div>
                   <div className="h-48 overflow-hidden relative">
                     <img 
@@ -682,15 +682,15 @@ export default function PublicPages({
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
                     />
                     <div className="absolute top-4 right-4 bg-black/80 backdrop-blur px-3 py-1 rounded-full border border-white/10">
-                      <span className="text-[10px] font-mono text-[#00E5FF] uppercase tracking-wider flex items-center gap-1.5">
-                        <span className={`inline-block w-1.5 h-1.5 rounded-full ${vehicle.status === 'available' ? 'bg-[#00E5FF]' : 'bg-amber-400'}`} />
+                      <span className="text-[10px] font-mono text-[#19D9E0] uppercase tracking-wider flex items-center gap-1.5">
+                        <span className={`inline-block w-1.5 h-1.5 rounded-full ${vehicle.status === 'available' ? 'bg-[#19D9E0]' : 'bg-amber-400'}`} />
                         {vehicle.status === 'available' ? t('vehicles.available') : t('vehicles.rented')}
                       </span>
                     </div>
                   </div>
 
                   <div className="p-6">
-                    <span className="text-[10px] font-mono text-[#00E5FF] uppercase tracking-widest block mb-1">{vehicle.type}</span>
+                    <span className="text-[10px] font-mono text-[#19D9E0] uppercase tracking-widest block mb-1">{vehicle.type}</span>
                     <h3 className="text-md font-semibold text-white mb-2 leading-tight font-display">{vehicle.name}</h3>
                     <p className="text-slate-400 text-xs font-light leading-relaxed mb-4">{vehicle.specs}</p>
                     
@@ -701,7 +701,7 @@ export default function PublicPages({
                       </div>
                       <div className="space-y-0.5 border-l border-white/5 pl-4">
                         <span className="text-[9px] text-slate-500 block uppercase font-mono">{t('vehicles.weeklyRate')}</span>
-                        <span className="text-sm font-bold text-[#00E5FF] font-mono">€{vehicle.weeklyPrice}</span>
+                        <span className="text-sm font-bold text-[#19D9E0] font-mono">€{vehicle.weeklyPrice}</span>
                       </div>
                     </div>
                   </div>
@@ -713,7 +713,7 @@ export default function PublicPages({
                     onClick={() => onApplyForRental(vehicle.id)}
                     className={`w-full py-3 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer transition ${
                       vehicle.status === 'available' 
-                        ? 'bg-[#00E5FF] hover:bg-cyan-300 text-black hover:shadow-[0_4px_12px_rgba(0,229,255,0.3)]' 
+                        ? 'bg-[#19D9E0] hover:bg-cyan-300 text-black hover:shadow-[0_4px_12px_rgba(25,217,224,0.3)]' 
                         : 'bg-white/5 text-gray-500 pointer-events-none'
                     }`}
                   >
@@ -746,7 +746,7 @@ export default function PublicPages({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start font-sans">
             
             <div className="lg:col-span-12 max-w-3xl">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#00E5FF] font-semibold">{t('about.tag')}</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0] font-semibold">{t('about.tag')}</span>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mt-4 font-display">{t('about.title')}</h1>
               <p className="text-slate-300 text-lg font-light mt-4 leading-relaxed">
                 {t('about.desc')}
@@ -770,15 +770,15 @@ export default function PublicPages({
 
             <div className="lg:col-span-4 space-y-6">
               <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                <span className="text-[10px] text-[#00E5FF] uppercase font-mono block mb-1 font-semibold">{t('about.companyDetail')}</span>
+                <span className="text-[10px] text-[#19D9E0] uppercase font-mono block mb-1 font-semibold">{t('about.companyDetail')}</span>
                 <span className="text-sm font-semibold text-white block">{t('about.companyName')}</span>
                 <p className="text-xs text-slate-400 mt-2 leading-relaxed whitespace-pre-line">
                   {t('about.companyInfo')}
                 </p>
               </div>
 
-              <div className="liquid-glass border border-[#00E5FF]/20 p-6 rounded-2xl">
-                <span className="text-[10px] text-[#00E5FF] uppercase font-mono block mb-1 font-semibold">{t('about.values')}</span>
+              <div className="liquid-glass border border-[#19D9E0]/20 p-6 rounded-2xl">
+                <span className="text-[10px] text-[#19D9E0] uppercase font-mono block mb-1 font-semibold">{t('about.values')}</span>
                 <ul className="text-xs text-slate-300 space-y-2 font-light">
                   <li>{t('about.value1')}</li>
                   <li>{t('about.value2')}</li>
@@ -798,7 +798,7 @@ export default function PublicPages({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start font-sans">
             
             <div className="lg:col-span-12 max-w-3xl mb-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#00E5FF] font-semibold">{t('contact.tag')}</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0] font-semibold">{t('contact.tag')}</span>
               <h1 className="text-4xl font-bold tracking-tight text-white mt-4 font-display">{t('contact.title')}</h1>
               <p className="text-slate-300 font-light text-base mt-4 leading-relaxed">
                 {t('contact.desc')}
@@ -808,8 +808,8 @@ export default function PublicPages({
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-6 font-mono text-xs text-slate-300">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-[#00E5FF]/5 border border-[#00E5FF]/20 rounded-xl text-white">
-                    <MapPin className="w-5 h-5 text-[#00E5FF]" />
+                  <div className="p-3 bg-[#19D9E0]/5 border border-[#19D9E0]/20 rounded-xl text-white">
+                    <MapPin className="w-5 h-5 text-[#19D9E0]" />
                   </div>
                   <div>
                     <span className="text-slate-500 uppercase block text-[9px]">{t('contact.officeAddr')}</span>
@@ -818,8 +818,8 @@ export default function PublicPages({
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-[#00E5FF]/5 border border-[#00E5FF]/20 rounded-xl text-white">
-                    <Phone className="w-5 h-5 text-[#00E5FF]" />
+                  <div className="p-3 bg-[#19D9E0]/5 border border-[#19D9E0]/20 rounded-xl text-white">
+                    <Phone className="w-5 h-5 text-[#19D9E0]" />
                   </div>
                   <div>
                     <span className="text-slate-500 uppercase block text-[9px]">{t('contact.phoneLabel')}</span>
@@ -828,8 +828,8 @@ export default function PublicPages({
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-[#00E5FF]/5 border border-[#00E5FF]/20 rounded-xl text-white">
-                    <Mail className="w-5 h-5 text-[#00E5FF]" />
+                  <div className="p-3 bg-[#19D9E0]/5 border border-[#19D9E0]/20 rounded-xl text-white">
+                    <Mail className="w-5 h-5 text-[#19D9E0]" />
                   </div>
                   <div>
                     <span className="text-slate-500 uppercase block text-[9px]">{t('contact.emailLabel')}</span>
@@ -839,15 +839,15 @@ export default function PublicPages({
               </div>
 
               {/* WHATSAPP WIDGET */}
-              <div className="p-6 rounded-2xl bg-[#00E5FF]/5 border border-[#00E5FF]/20">
-                <span className="text-[9px] font-mono text-[#00E5FF] uppercase tracking-widest block mb-1 font-semibold">{t('contact.wa.kicker')}</span>
+              <div className="p-6 rounded-2xl bg-[#19D9E0]/5 border border-[#19D9E0]/20">
+                <span className="text-[9px] font-mono text-[#19D9E0] uppercase tracking-widest block mb-1 font-semibold">{t('contact.wa.kicker')}</span>
                 <span className="text-sm font-semibold text-white block font-display">{t('contact.wa.title')}</span>
                 <p className="text-xs text-slate-400 mt-1 mb-4">{t('contact.wa.desc')}</p>
                 <a 
                   href="https://wa.me/38515559823" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="bg-[#00E5FF] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(0,229,255,0.4)] text-black px-4 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2 transition"
+                  className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-4 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2 transition"
                 >
                   <Phone className="w-4 h-4 fill-black text-black" />
                   {t('contact.wa.cta')}
@@ -861,8 +861,8 @@ export default function PublicPages({
 
                 {contactSubmitted ? (
                    <div className="text-center py-12 space-y-4">
-                     <div className="w-12 h-12 bg-[#00E5FF]/10 border border-[#00E5FF]/25 text-[#00E5FF] rounded-full flex items-center justify-center mx-auto">
-                       <Send className="w-6 h-6 animate-pulse text-[#00E5FF]" />
+                     <div className="w-12 h-12 bg-[#19D9E0]/10 border border-[#19D9E0]/25 text-[#19D9E0] rounded-full flex items-center justify-center mx-auto">
+                       <Send className="w-6 h-6 animate-pulse text-[#19D9E0]" />
                      </div>
                      <h4 className="text-lg text-white font-semibold font-display">{t('contact.form.successTitle')}</h4>
                      <p className="text-xs text-slate-400 max-w-sm mx-auto">
@@ -881,7 +881,7 @@ export default function PublicPages({
                           value={contactForm.name}
                           onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
                           placeholder={t('contact.form.namePh')}
-                          className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#00E5FF] focus:outline-none focus:ring-1 focus:ring-[#00E5FF]/30 transition"
+                          className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#19D9E0] focus:outline-none focus:ring-1 focus:ring-[#19D9E0]/30 transition"
                         />
                       </div>
                       <div className="space-y-1.5">
@@ -892,7 +892,7 @@ export default function PublicPages({
                           value={contactForm.email}
                           onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
                           placeholder={t('contact.form.emailPh')}
-                          className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#00E5FF] focus:outline-none focus:ring-1 focus:ring-[#00E5FF]/30 transition"
+                          className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#19D9E0] focus:outline-none focus:ring-1 focus:ring-[#19D9E0]/30 transition"
                         />
                       </div>
                     </div>
@@ -902,7 +902,7 @@ export default function PublicPages({
                       <select
                         value={contactForm.subject}
                         onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })}
-                        className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm focus:border-[#00E5FF] focus:outline-none focus:ring-1 focus:ring-[#00E5FF]/30 transition text-white appearance-none"
+                        className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm focus:border-[#19D9E0] focus:outline-none focus:ring-1 focus:ring-[#19D9E0]/30 transition text-white appearance-none"
                       >
                         <option value="Driver Inquiry" className="bg-black text-white">{t('contact.form.r1')}</option>
                         <option value="Company Inquiry" className="bg-black text-white">{t('contact.form.r2')}</option>
@@ -919,13 +919,13 @@ export default function PublicPages({
                         value={contactForm.message}
                         onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
                         placeholder={t('contact.form.messagePh')}
-                        className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#00E5FF] focus:outline-none focus:ring-1 focus:ring-[#00E5FF]/30 transition"
+                        className="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-[#19D9E0] focus:outline-none focus:ring-1 focus:ring-[#19D9E0]/30 transition"
                       />
                     </div>
 
                     <button 
                       type="submit"
-                      className="bg-[#00E5FF] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(0,229,255,0.4)] text-black px-6 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer w-full transition flex items-center justify-center gap-2"
+                      className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-6 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer w-full transition flex items-center justify-center gap-2"
                     >
                       {t('contact.form.submit')}
                       <Send className="w-4 h-4 text-black" />

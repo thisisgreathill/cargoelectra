@@ -7,10 +7,10 @@
   --font-tech: "Chakra Petch", "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-brand-electric: #00E5FF;
-  --color-brand-cobalt: #2563EB;
-  --color-brand-indigo: #4F46E5;
-  --color-cyan-glow: rgba(0, 229, 255, 0.15);
+  --color-brand-electric: #19D9E0;
+  --color-brand-cobalt: #B4E61E;
+  --color-brand-indigo: #7CB518;
+  --color-cyan-glow: rgba(25, 217, 224, 0.15);
   --color-deep-slate: #0A0E1A;
 }
 
@@ -19,7 +19,7 @@
     background: rgba(10, 18, 36, 0.45);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(0, 229, 255, 0.08);
+    border: 1px solid rgba(25, 217, 224, 0.08);
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.03), 0 12px 40px rgba(0, 0, 0, 0.6);
     position: relative;
     overflow: hidden;
@@ -33,12 +33,12 @@
     padding: 1px;
     background: linear-gradient(
       180deg,
-      rgba(0, 229, 255, 0.12) 0%,
-      rgba(37, 99, 235, 0.03) 25%,
+      rgba(25, 217, 224, 0.12) 0%,
+      rgba(180, 230, 30, 0.03) 25%,
       rgba(255, 255, 255, 0) 50%,
       rgba(255, 255, 255, 0) 75%,
-      rgba(37, 99, 235, 0.03) 85%,
-      rgba(0, 229, 255, 0.12) 100%
+      rgba(180, 230, 30, 0.03) 85%,
+      rgba(25, 217, 224, 0.12) 100%
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
                   linear-gradient(#fff 0 0);
@@ -59,12 +59,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 229, 255, 0.15);
+  background: rgba(25, 217, 224, 0.15);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 229, 255, 0.35);
+  background: rgba(25, 217, 224, 0.35);
 }
 
 /* Character Animation transition class helper */
@@ -81,18 +81,18 @@
   background: rgba(7, 11, 22, 0.55);
   backdrop-filter: blur(22px) saturate(140%);
   -webkit-backdrop-filter: blur(22px) saturate(140%);
-  border: 1px solid rgba(0, 229, 255, 0.10);
+  border: 1px solid rgba(25, 217, 224, 0.10);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 8px 32px rgba(0, 0, 0, 0.45);
 }
 .nav-shell--scrolled {
   background: rgba(5, 8, 17, 0.78);
-  border-color: rgba(0, 229, 255, 0.16);
+  border-color: rgba(25, 217, 224, 0.16);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 10px 40px rgba(0, 0, 0, 0.6),
-    0 0 0 1px rgba(0, 229, 255, 0.04);
+    0 0 0 1px rgba(25, 217, 224, 0.04);
 }
 
 /* Animated underline indicator for nav links */
@@ -105,11 +105,11 @@
   position: absolute;
   left: 0; bottom: -1px;
   height: 1.5px; width: 100%;
-  background: linear-gradient(90deg, #00E5FF, #2563EB);
+  background: linear-gradient(90deg, #19D9E0, #B4E61E);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  box-shadow: 0 0 8px rgba(25, 217, 224, 0.6);
 }
 .nav-link:hover::after { transform: scaleX(1); }
 .nav-link[data-active="true"]::after { transform: scaleX(1); }
@@ -131,15 +131,15 @@
   cursor: pointer;
 }
 .seg > button[data-on="true"] {
-  background: rgba(0, 229, 255, 0.14);
-  color: #00E5FF;
-  box-shadow: inset 0 0 0 1px rgba(0, 229, 255, 0.3), 0 0 12px rgba(0, 229, 255, 0.12);
+  background: rgba(25, 217, 224, 0.14);
+  color: #19D9E0;
+  box-shadow: inset 0 0 0 1px rgba(25, 217, 224, 0.3), 0 0 12px rgba(25, 217, 224, 0.12);
 }
 
 /* Logo bolt pulse */
 @keyframes boltPulse {
-  0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px rgba(0,229,255,0.7)); }
-  50% { opacity: 0.7; filter: drop-shadow(0 0 9px rgba(0,229,255,1)); }
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px rgba(25, 217, 224,0.7)); }
+  50% { opacity: 0.7; filter: drop-shadow(0 0 9px rgba(25, 217, 224,1)); }
 }
 .bolt-pulse { animation: boltPulse 2.6s ease-in-out infinite; }
 
@@ -161,26 +161,26 @@
   font-size: 10px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #00E5FF;
+  color: #19D9E0;
 }
 .kicker::before {
   content: '';
   width: 28px; height: 1px;
-  background: linear-gradient(90deg, transparent, #00E5FF);
-  box-shadow: 0 0 6px rgba(0, 229, 255, 0.6);
+  background: linear-gradient(90deg, transparent, #19D9E0);
+  box-shadow: 0 0 6px rgba(25, 217, 224, 0.6);
 }
 .kicker--center::after {
   content: '';
   width: 28px; height: 1px;
-  background: linear-gradient(90deg, #00E5FF, transparent);
-  box-shadow: 0 0 6px rgba(0, 229, 255, 0.6);
+  background: linear-gradient(90deg, #19D9E0, transparent);
+  box-shadow: 0 0 6px rgba(25, 217, 224, 0.6);
 }
 
 /* Stepped circuit card — connected, glowing on hover */
 .step-card {
   position: relative;
   background:
-    linear-gradient(160deg, rgba(0,229,255,0.05) 0%, rgba(10,18,36,0) 38%),
+    linear-gradient(160deg, rgba(25, 217, 224,0.05) 0%, rgba(10,18,36,0) 38%),
     rgba(8, 13, 25, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1.1rem;
@@ -192,15 +192,15 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(120% 80% at 50% -10%, rgba(0,229,255,0.18), transparent 60%);
+  background: radial-gradient(120% 80% at 50% -10%, rgba(25, 217, 224,0.18), transparent 60%);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
 }
 .step-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0, 229, 255, 0.35);
-  box-shadow: 0 20px 50px -20px rgba(0, 229, 255, 0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+  border-color: rgba(25, 217, 224, 0.35);
+  box-shadow: 0 20px 50px -20px rgba(25, 217, 224, 0.4), inset 0 1px 0 rgba(255,255,255,0.05);
 }
 .step-card:hover::after { opacity: 1; }
 
@@ -209,7 +209,7 @@
   font-family: var(--font-tech);
   font-weight: 700;
   line-height: 0.8;
-  background: linear-gradient(180deg, rgba(0,229,255,0.18), rgba(0,229,255,0.02));
+  background: linear-gradient(180deg, rgba(25, 217, 224,0.18), rgba(25, 217, 224,0.02));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -217,7 +217,7 @@
 
 /* Connecting dotted spine behind step cards (desktop) */
 .step-spine {
-  background-image: linear-gradient(90deg, rgba(0,229,255,0.35) 0 8px, transparent 8px 18px);
+  background-image: linear-gradient(90deg, rgba(25, 217, 224,0.35) 0 8px, transparent 8px 18px);
   background-size: 18px 1px;
   background-repeat: repeat-x;
 }
@@ -229,8 +229,8 @@
   position: absolute;
   left: 0; top: 4px;
   width: 2px; height: 22px;
-  background: linear-gradient(180deg, #00E5FF, transparent);
-  box-shadow: 0 0 8px rgba(0,229,255,0.5);
+  background: linear-gradient(180deg, #19D9E0, transparent);
+  box-shadow: 0 0 8px rgba(25, 217, 224,0.5);
 }
 
 /* Section atmosphere: faint grid + top hairline */
