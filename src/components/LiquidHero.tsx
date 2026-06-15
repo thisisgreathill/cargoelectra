@@ -253,7 +253,7 @@ export default function LiquidHero({
               <button
                 id="btn-apply-driver"
                 onClick={onJoinAsDriver}
-                className="bg-[#19D9E0] hover:bg-cyan-300 text-black px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 flex items-center gap-2 cursor-pointer shadow-[0_4px_20px_rgba(25,217,224,0.25)] active:scale-[0.98]"
+                className="bg-[#19D9E0] hover:bg-[#5EEAE0] text-black px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase transition duration-300 flex items-center gap-2 cursor-pointer shadow-[0_4px_20px_rgba(25,217,224,0.25)] active:scale-[0.98]"
               >
                 {t('hero.applyDriver')}
                 <ArrowRight className="w-5 h-5" />

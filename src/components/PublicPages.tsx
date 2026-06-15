@@ -130,9 +130,8 @@ export default function PublicPages({
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9E0] block mb-8">{t('home.brands.tag')}</span>
               <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-60 hover:opacity-100 transition-opacity duration-300">
                 <div className="text-2xl font-black tracking-widest text-[#19D9E0] font-display">WOLT <span className="text-white">FLEET</span></div>
-                <div className="text-2xl font-black tracking-wider text-[#19D9E0] font-display">BOLT <span className="text-white">FOOD</span></div>
-                <div className="text-2xl font-semibold tracking-tight text-white font-display">CARGO <span className="text-[#19D9E0] font-display font-black">B2B</span></div>
-                <div className="text-2xl font-mono tracking-widest text-[#FFF]">BOLT <span className="text-[#19D9E0] font-display font-black">TAXI</span></div>
+                <div className="text-2xl font-black tracking-wider text-[#B4E61E] font-display">GLOVO <span className="text-white">FLEET</span></div>
+                <div className="text-2xl font-semibold tracking-tight text-white font-display">ZAGREB <span className="text-[#19D9E0] font-display font-black">· SPLIT · RIJEKA</span></div>
               </div>
             </div>
           </section>
@@ -177,7 +176,7 @@ export default function PublicPages({
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 
                 <div>
-                  <span className="font-mono text-xs uppercase tracking-widest text-cyan-400">{t('home.test.tag')}</span>
+                  <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0]">{t('home.test.tag')}</span>
                   <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-white mt-4">{t('home.test.title')}</h2>
                   <p className="text-gray-400 font-light mt-4 leading-relaxed">
                     {t('home.test.desc')}
@@ -186,12 +185,12 @@ export default function PublicPages({
 
                 <div className="space-y-6">
                   <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                    <div className="flex items-center gap-1 text-cyan-400 mb-3 text-xs">
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
+                    <div className="flex items-center gap-1 text-[#19D9E0] mb-3 text-xs">
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
                     </div>
                     <p className="text-sm text-gray-300 font-light leading-relaxed italic mb-4">
                       {t('home.test1.quote')}
@@ -200,12 +199,12 @@ export default function PublicPages({
                   </div>
 
                   <div className="liquid-glass border border-white/5 p-6 rounded-2xl">
-                    <div className="flex items-center gap-1 text-cyan-400 mb-3 text-xs">
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
-                      <Star className="w-4 h-4 fill-cyan-400" />
+                    <div className="flex items-center gap-1 text-[#19D9E0] mb-3 text-xs">
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
+                      <Star className="w-4 h-4 fill-[#19D9E0]" />
                     </div>
                     <p className="text-sm text-gray-300 font-light leading-relaxed italic mb-4">
                       {t('home.test2.quote')}
@@ -221,7 +220,7 @@ export default function PublicPages({
           {/* FINAL CTA BANNER */}
           <section className="py-24 border-t border-white/5 text-center">
             <div className="max-w-4xl mx-auto px-6">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#39FF14]">{t('home.cta.tag')}</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-[#B4E61E]">{t('home.cta.tag')}</span>
               <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white mt-4 mb-6 leading-tight">
                 {t('home.cta.title')}
               </h2>
@@ -248,7 +247,7 @@ export default function PublicPages({
       {currentTab === 'services' && (
         <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="max-w-3xl mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-cyan-400">{t('services.tag')}</span>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#19D9E0]">{t('services.tag')}</span>
             <h1 className="text-4xl md:text-5xl font-normal tracking-tight text-white mt-4">{t('services.title')}</h1>
             <p className="text-gray-400 text-lg font-light mt-4 leading-relaxed">
               {t('services.desc')}
@@ -259,12 +258,12 @@ export default function PublicPages({
             
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center p-8 rounded-2xl border border-white/5 liquid-glass">
               <div className="md:col-span-8">
-                <span className="font-mono text-xs text-cyan-400">{t('services.s1.kicker')}</span>
+                <span className="font-mono text-xs text-[#19D9E0]">{t('services.s1.kicker')}</span>
                 <h3 className="text-2xl font-normal text-white mt-2 mb-4">{t('services.s1.title')}</h3>
                 <p className="text-gray-400 font-light text-sm leading-relaxed mb-4">
                   {t('services.s1.desc')}
                 </p>
-                <div className="flex gap-6 text-xs text-cyan-300 font-mono">
+                <div className="flex gap-6 text-xs text-[#19D9E0] font-mono">
                   <span>{t('services.s1.b1')}</span>
                   <span>{t('services.s1.b2')}</span>
                   <span>{t('services.s1.b3')}</span>
@@ -281,12 +280,12 @@ export default function PublicPages({
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center p-8 rounded-2xl border border-border/5 liquid-glass">
               <div className="md:col-span-8">
-                <span className="font-mono text-xs text-cyan-400">{t('services.s2.kicker')}</span>
+                <span className="font-mono text-xs text-[#19D9E0]">{t('services.s2.kicker')}</span>
                 <h3 className="text-2xl font-normal text-white mt-2 mb-4">{t('services.s2.title')}</h3>
                 <p className="text-gray-400 font-light text-sm leading-relaxed mb-4">
                   {t('services.s2.desc')}
                 </p>
-                <div className="flex gap-6 text-xs text-cyan-300 font-mono">
+                <div className="flex gap-6 text-xs text-[#19D9E0] font-mono">
                   <span>{t('services.s2.b1')}</span>
                   <span>{t('services.s2.b2')}</span>
                   <span>{t('services.s2.b3')}</span>
@@ -295,7 +294,7 @@ export default function PublicPages({
               <div className="md:col-span-4 flex justify-end">
                 <div className="bg-[#030d07] border border-emerald-500/10 p-6 rounded-xl w-full text-center">
                   <span className="text-xs text-gray-400 uppercase font-mono block">{t('services.s2.priceLabel')}</span>
-                  <span className="text-4xl font-extrabold text-[#39FF14] block mt-2 font-mono">{t('services.s2.priceValue')}</span>
+                  <span className="text-4xl font-extrabold text-[#B4E61E] block mt-2 font-mono">{t('services.s2.priceValue')}</span>
                   <span className="text-xs text-gray-500 block mt-1">{t('services.s2.priceSub')}</span>
                 </div>
               </div>
@@ -303,12 +302,12 @@ export default function PublicPages({
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center p-8 rounded-2xl border border-white/5 liquid-glass">
               <div className="md:col-span-8">
-                <span className="font-mono text-xs text-cyan-400">{t('services.s3.kicker')}</span>
+                <span className="font-mono text-xs text-[#19D9E0]">{t('services.s3.kicker')}</span>
                 <h3 className="text-2xl font-normal text-white mt-2 mb-4">{t('services.s3.title')}</h3>
                 <p className="text-gray-400 font-light text-sm leading-relaxed mb-4">
                   {t('services.s3.desc')}
                 </p>
-                <div className="flex gap-6 text-xs text-cyan-300 font-mono">
+                <div className="flex gap-6 text-xs text-[#19D9E0] font-mono">
                   <span>{t('services.s3.b1')}</span>
                   <span>{t('services.s3.b2')}</span>
                   <span>{t('services.s3.b3')}</span>
@@ -325,7 +324,7 @@ export default function PublicPages({
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center p-8 rounded-2xl border border-white/5 liquid-glass">
               <div className="md:col-span-8">
-                <span className="font-mono text-xs text-cyan-400">{t('services.s4.kicker')}</span>
+                <span className="font-mono text-xs text-[#19D9E0]">{t('services.s4.kicker')}</span>
                 <h3 className="text-2xl font-normal text-white mt-2 mb-4 font-display font-semibold">{t('services.s4.title')}</h3>
                 <p className="text-gray-400 font-light text-sm leading-relaxed mb-4">
                   {t('services.s4.desc')}
@@ -467,7 +466,7 @@ export default function PublicPages({
                 </div>
                 <button
                   onClick={onJoinAsBusiness}
-                  className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(25,217,224,0.5)] text-black px-4 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
+                  className="bg-[#19D9E0] hover:bg-[#5EEAE0] hover:shadow-[0_0_20px_rgba(25,217,224,0.5)] text-black px-4 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition w-full mt-8 cursor-pointer"
                 >
                   {t('companies.plan.apply')}
                 </button>
@@ -617,7 +616,7 @@ export default function PublicPages({
 
               <button 
                 onClick={onJoinAsDriver}
-                className="w-full bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.3)] text-black py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition cursor-pointer"
+                className="w-full bg-[#19D9E0] hover:bg-[#5EEAE0] hover:shadow-[0_4px_15px_rgba(25,217,224,0.3)] text-black py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition cursor-pointer"
               >
                 {t('drivers.calc.cta')}
               </button>
@@ -713,7 +712,7 @@ export default function PublicPages({
                     onClick={() => onApplyForRental(vehicle.id)}
                     className={`w-full py-3 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer transition ${
                       vehicle.status === 'available' 
-                        ? 'bg-[#19D9E0] hover:bg-cyan-300 text-black hover:shadow-[0_4px_12px_rgba(25,217,224,0.3)]' 
+                        ? 'bg-[#19D9E0] hover:bg-[#5EEAE0] text-black hover:shadow-[0_4px_12px_rgba(25,217,224,0.3)]' 
                         : 'bg-white/5 text-gray-500 pointer-events-none'
                     }`}
                   >
@@ -847,7 +846,7 @@ export default function PublicPages({
                   href="https://wa.me/38515559823" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-4 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2 transition"
+                  className="bg-[#19D9E0] hover:bg-[#5EEAE0] hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-4 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2 transition"
                 >
                   <Phone className="w-4 h-4 fill-black text-black" />
                   {t('contact.wa.cta')}
@@ -925,7 +924,7 @@ export default function PublicPages({
 
                     <button 
                       type="submit"
-                      className="bg-[#19D9E0] hover:bg-cyan-300 hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-6 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer w-full transition flex items-center justify-center gap-2"
+                      className="bg-[#19D9E0] hover:bg-[#5EEAE0] hover:shadow-[0_4px_15px_rgba(25,217,224,0.4)] text-black px-6 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer w-full transition flex items-center justify-center gap-2"
                     >
                       {t('contact.form.submit')}
                       <Send className="w-4 h-4 text-black" />

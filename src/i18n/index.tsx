@@ -10,14 +10,14 @@ const STORAGE_KEY = 'cargoelectra_lang';
 // SEO: per-locale <title> + meta description, swapped on language change.
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
-    title: 'CargoElectra — Croatia\'s Managed Driver Network & Logistics Platform',
+    title: 'CargoElectra — Croatia\'s Managed Courier Network for Wolt & Glovo',
     description:
-      'CargoElectra is Croatia\'s smart managed driver network and logistics platform for Wolt, Bolt and B2B cargo. Premium fleet rental, vetted couriers, insured freight in Zagreb.',
+      'CargoElectra is Croatia\'s managed courier network for Wolt & Glovo. We handle payroll, tax, platform accounts and vehicle rental so couriers can start earning in Zagreb, Split & Rijeka.',
   },
   hr: {
-    title: 'CargoElectra — Hrvatska mreža vozača i logistička platforma',
+    title: 'CargoElectra — Hrvatska kurirska mreža za Wolt i Glovo',
     description:
-      'CargoElectra je hrvatska pametna mreža upravljanih vozača i logistička platforma za Wolt, Bolt i B2B teret. Premium najam vozila, provjereni kuriri, osigurani prijevoz u Zagrebu.',
+      'CargoElectra je hrvatska upravljana kurirska mreža za Wolt i Glovo. Brinemo o plaćama, porezu, platformskim računima i najmu vozila kako bi kuriri počeli zarađivati u Zagrebu, Splitu i Rijeci.',
   },
 };
 
